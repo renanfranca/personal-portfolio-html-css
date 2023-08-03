@@ -1,0 +1,12 @@
+{
+  "actions" : [ {
+    "module" : "init",
+    "date" : "2023-08-03T17:36:04.982600310Z",
+    "properties" : {
+      "projectName" : "Personal Portfolio HTML+ CSS",
+      "baseName" : "PersonalPortfolioHtmlCss",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
+  } ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "personal-portfolio-html-css",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Personal Portfolio HTML+ CSS",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
+}
