@@ -5,7 +5,7 @@ const palette = require('./palette');
 module.exports = withAnimations({
   content: ['./src/**/*.html'],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'media'
   theme: {
     extend: {
       colors: palette,
@@ -309,8 +309,8 @@ module.exports = withAnimations({
     fontFamily: {
       normal: ['interregular'],
       medium: ['intermedium'],
-      bold: ['interbold'],
       semibold: ['intersemi_bold'],
+      bold: ['interbold'],
       sans: [
         'ui-sans-serif',
         'system-ui',

@@ -1,22 +1,11 @@
 @font-face {
-  font-family: 'interbold';
+  font-family: 'interregular';
   src:
-    local('Inter Bold'),
-    local('Inter-Bold'),
-    url('../fonts/inter-bold.woff2') format('woff2'),
-    url('../fonts/inter-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'intersemi_bold';
-  src:
-    local('Inter Semi Bold'),
-    local('Inter-Semi-Bold'),
-    url('../fonts/inter-semibold.woff2') format('woff2'),
-    url('../fonts/inter-semibold.woff') format('woff');
-  font-weight: 600;
+    local('Inter Regular'),
+    local('Inter-Regular'),
+    url('../fonts/inter-regular.woff2') format('woff2'),
+    url('../fonts/inter-regular.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -27,17 +16,28 @@
     local('Inter-Medium'),
     url('../fonts/inter-medium.woff2') format('woff2'),
     url('../fonts/inter-medium.woff') format('woff');
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'interregular';
+  font-family: 'intersemi_bold';
   src:
-    local('Inter Regular'),
-    local('Inter-Regular'),
-    url('../fonts/inter-regular.woff2') format('woff2'),
-    url('../fonts/inter-regular.woff') format('woff');
-  font-weight: 400;
+    local('Inter SemiBold'),
+    local('Inter-SemiBold'),
+    url('../fonts/inter-semibold.woff2') format('woff2'),
+    url('../fonts/inter-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'interbold';
+  src:
+    local('Inter Bold'),
+    local('Inter-Bold'),
+    url('../fonts/inter-bold.woff2') format('woff2'),
+    url('../fonts/inter-bold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
