@@ -1,6 +1,6 @@
 module.exports = {
   lightgray: {
-    default: '#ffffff',
+    DEFAULT: '#ffffff',
     50: '#f9fafb',
     100: '#f3f4f6',
     200: '#e5e7eb',
@@ -14,7 +14,7 @@ module.exports = {
     950: '#030712',
   },
   darkgray: {
-    default: '#030712',
+    DEFAULT: '#030712',
     50: '#111827',
     100: '#1f2937',
     200: '#374151',
