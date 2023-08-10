@@ -419,6 +419,9 @@ video {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
 }
@@ -428,24 +431,60 @@ video {
 .top-0 {
   top: 0px;
 }
+.z-10 {
+  z-index: 10;
+}
 .z-20 {
   z-index: 20;
 }
 .z-50 {
   z-index: 50;
 }
+.m-auto {
+  margin: auto;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .flex {
   display: flex;
+}
+.inline-flex {
+  display: inline-flex;
 }
 .hidden {
   display: none;
 }
+.h-3 {
+  height: 0.75rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.h-\[256px\] {
+  height: 256px;
+}
+.h-\[300px\] {
+  height: 300px;
+}
 .h-full {
   height: 100%;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.w-\[240px\] {
+  width: 240px;
+}
+.w-\[256px\] {
+  width: 256px;
 }
 .w-full {
   width: 100%;
@@ -516,6 +555,15 @@ video {
 .animate-flipOutY {
   animation: 0.75s both flipOutY;
 }
+@keyframes twPing {
+  75%, 100% {
+    transform: scale3d(2, 2, 1);
+    opacity: 0;
+  }
+}
+.animate-twPing {
+  animation: 1s cubic-bezier(0, 0, 0.2, 1) both twPing;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -525,24 +573,54 @@ video {
 .justify-end {
   justify-content: flex-end;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
+}
+.gap-12 {
+  gap: 3rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-4 {
   gap: 1rem;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.border-b-2 {
-  border-bottom-width: 2px;
+.border-4 {
+  border-width: 4px;
+}
+.border-8 {
+  border-width: 8px;
 }
 .border-b {
   border-bottom-width: 1px;
 }
+.border-t-0 {
+  border-top-width: 0px;
+}
+.border-emerald {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+}
 .border-lightgray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+.border-lightgray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.bg-emerald {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 .bg-lightgray {
   --tw-bg-opacity: 1;
@@ -552,15 +630,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
-.bg-lightgray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-.bg-lightgray-900\/10 {
-  background-color: rgb(17 24 39 / 0.1);
-}
-.bg-lightgray-900\/90 {
-  background-color: rgb(17 24 39 / 0.9);
+.bg-transparent {
+  background-color: transparent;
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -571,22 +642,30 @@ video {
 .stroke-lightgray-600 {
   stroke: #4b5563;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-4 {
   padding: 1rem;
 }
-.p-2 {
-  padding: 0.5rem;
-}
-.p-1 {
-  padding: 0.25rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -606,6 +685,10 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-base {
   font-size: 1rem;
@@ -668,25 +751,17 @@ video {
 .animate-faster {
   animation-duration: 0.5s;
 }
+.animate-infinite {
+  animation-iteration-count: infinite;
+}
 html,
 body {
   width: 100%;
   height: 100%;
 }
-.hover\:bg-lightgray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
 .hover\:bg-lightgray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.hover\:bg-lightgray-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-.hover\:bg-lightgray-200\/90:hover {
-  background-color: rgb(229 231 235 / 0.9);
 }
 .hover\:bg-lightgray-700:hover {
   --tw-bg-opacity: 1;
@@ -709,13 +784,6 @@ body {
 :is(.dark .dark\:bg-darkgray-900) {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-:is(.dark .dark\:bg-darkgray-100) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-:is(.dark .dark\:bg-darkgray-900\/90) {
-  background-color: rgb(249 250 251 / 0.9);
 }
 :is(.dark .dark\:stroke-darkgray-600) {
   stroke: #d1d5db;

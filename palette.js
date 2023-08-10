@@ -28,6 +28,6 @@ module.exports = {
     950: '#ffffff',
   },
   emerald: {
-    default: '#10b981',
+    DEFAULT: '#10b981',
   },
 };
