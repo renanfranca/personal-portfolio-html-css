@@ -486,6 +486,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[28px\] {
+  height: 28px;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -512,6 +515,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-\[102px\] {
+  width: 102px;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -590,6 +596,67 @@ video {
 }
 .animate-twPing {
   animation: 1s cubic-bezier(0, 0, 0.2, 1) both twPing;
+}
+@keyframes bounce {
+  from, 20%, 53%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scale3d(1, 1.1, 1);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scale3d(1, 1.05, 1);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 0.95, 1);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0) scale3d(1, 1.02, 1);
+  }
+}
+.animate-bounce {
+  animation: 1s both bounce;
+}
+@keyframes headShake {
+  6.5% {
+    transform: translate3d(-6px, 0, 0) rotate3d(0, 1, 0, -9deg);
+  }
+  18.5% {
+    transform: translate3d(5px, 0, 0) rotate3d(0, 1, 0, 7deg);
+  }
+  31.5% {
+    transform: translate3d(-3px, 0, 0) rotate3d(0, 1, 0, -5deg);
+  }
+  43.5% {
+    transform: translate3d(2px, 0, 0) rotate3d(0, 1, 0, 3deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate-headShake {
+  animation: 1s ease-in-out both headShake;
+}
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+.animate-slideInRight {
+  animation: 1s both slideInRight;
+}
+@keyframes slideOutRight {
+  to {
+    transform: translate3d(100%, 0, 0);
+    visibility: hidden;
+  }
+}
+.animate-slideOutRight {
+  animation: 1s both slideOutRight;
 }
 .list-inside {
   list-style-position: inside;
@@ -694,6 +761,9 @@ video {
 .p-4 {
   padding: 1rem;
 }
+.p-8 {
+  padding: 2rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -780,9 +850,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
+.text-lightgray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .backdrop-blur-sm {
@@ -808,6 +887,9 @@ video {
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animate-bounce {
+  transform-origin: center bottom;
 }
 .animate-flipInY {
   backface-visibility: visible;
@@ -858,6 +940,10 @@ video {
 :is(.dark .dark\:bg-darkgray\/50) {
   background-color: rgb(3 7 18 / 0.5);
 }
+:is(.dark .dark\:bg-darkgray-50) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
 :is(.dark .dark\:stroke-darkgray-600) {
   stroke: #d1d5db;
 }
@@ -872,6 +958,20 @@ video {
 :is(.dark .dark\:text-darkgray-900) {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:text-darkgray-700) {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:shadow-xl) {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+:is(.dark .dark\:shadow-md) {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 :is(.dark .dark\:hover\:bg-darkgray-100:hover) {
   --tw-bg-opacity: 1;

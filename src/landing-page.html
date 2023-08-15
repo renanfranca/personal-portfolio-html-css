@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
     >
       <div
         id="menu-content"
-        class="flex flex-col w-full max-w-xs py-2 bg-lightgray dark:bg-darkgray shadow-2xl animate-flipInY animate-faster transition-all ease-in-out duration-100"
+        class="flex flex-col w-full max-w-xs py-2 bg-lightgray dark:bg-darkgray shadow-2xl animate-slideInRight animate-faster transition-all ease-in-out duration-100"
       >
         <div class="flex justify-between p-4 border-b border-lightgray-100 dark:border-darkgray-100">
           <h3 class="font-bold text-2xl text-lightgray-900 dark:text-darkgray-900">&lt;SS /&gt;</h3>
@@ -51,7 +51,7 @@
             <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Switch Theme</p>
             <button id="switch-theme" class="p-1 rounded-lg hover:bg-lightgray-100 dark:hover:bg-darkgray-100">
               <svg
-                class="stroke-lightgray-600 flex dark:hidden animate-bounceInUp"
+                class="stroke-lightgray-600 flex dark:hidden animate-bounce"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -68,7 +68,7 @@
                 <path d="M21 5H17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
               <svg
-                class="stroke-darkgray-600 hidden dark:flex animate-bounceInUp"
+                class="stroke-darkgray-600 hidden dark:flex animate-bounce"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -248,7 +248,7 @@
           </a>
         </div>
       </section>
-      <section class="flex flex-col w-full max-w-7xl mx-auto py-16 px-4 gap-12">
+      <section class="flex flex-col w-full max-w-7xl mx-auto py-16 px-4 gap-12 dark:bg-darkgray-50">
         <div class="flex flex-col gap-6">
           <div class="flex justify-center">
             <p
@@ -288,13 +288,13 @@
           </p>
           <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Finally, some quick bits about me.</p>
           <div class="flex gap-2">
-            <ul class="flex flex-col list-inside list-disc gap-2">
-              <li class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">B.E. in Computer Engineering</li>
-              <li class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Full time freelancer</li>
+            <ul class="flex flex-col list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 gap-2">
+              <li>B.E. in Computer Engineering</li>
+              <li>Full time freelancer</li>
             </ul>
-            <ul class="flex flex-col list-inside list-disc gap-2">
-              <li class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Avid learner</li>
-              <li class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Aspiring indie hacker</li>
+            <ul class="flex flex-col list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 gap-2">
+              <li>Avid learner</li>
+              <li>Aspiring indie hacker</li>
             </ul>
           </div>
           <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">
@@ -397,6 +397,50 @@
           </div>
         </div>
       </section>
+      <section class="flex flex-col w-full max-w-7xl mx-auto py-16 px-4 gap-6 dark:bg-darkgray-50">
+        <div class="flex flex-col gap-4">
+          <div class="flex justify-center">
+            <p
+              class="font-medium text-sm text-center text-gray-600 dark:text-darkgray-600 py-1 px-5 bg-lightgray-200 dark:bg-darkgray-200 rounded-xl"
+            >
+              Experience
+            </p>
+          </div>
+          <p class="font-normal text-lg text-center text-lightgray-600 dark:text-darkgray-600">
+            Here is a quick summary of my most recent experiences:
+          </p>
+        </div>
+        <div class="flex flex-col p-8 gap-4 shadow-md dark:shadow-xl rounded-xl">
+          <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
+          <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700">Nov 2021 - Present</p>
+          <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">Sr. Frontend Developer</p>
+          <ul class="list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+            <li>Sed quis justo ac magna.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          </ul>
+        </div>
+        <div class="flex flex-col p-8 gap-4 shadow-md dark:shadow-xl rounded-xl">
+          <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
+          <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700">Jul 2017 - Oct 2021</p>
+          <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">Team Lead</p>
+          <ul class="list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
+            <li>Sed quis justo ac magna.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Sed quis justo ac magna.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          </ul>
+        </div>
+        <div class="flex flex-col p-8 gap-4 shadow-md dark:shadow-xl rounded-xl">
+          <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
+          <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700">Dec 2015 - May 2017</p>
+          <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">Full Stack Developer</p>
+          <ul class="list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- The following code is only for demonstrating the features -->
     <script>
@@ -409,10 +453,20 @@
       hamburger.addEventListener('click', function () {
         menu.classList.toggle('hidden');
       });
-      closeMenu.addEventListener('click', function () {
-        menuContent.classList.toggle('animate-flipOutY');
+      menu.addEventListener('click', function () {
+        menuContent.classList.toggle('animate-slideOutRight');
         setTimeout(function () {
-          menuContent.classList.toggle('animate-flipOutY');
+          menuContent.classList.toggle('animate-slideOutRight');
+          menu.classList.toggle('hidden');
+        }, 250);
+      });
+      menuContent.addEventListener('click', function (event) {
+        event.stopPropagation();
+      });
+      closeMenu.addEventListener('click', function () {
+        menuContent.classList.toggle('animate-slideOutRight');
+        setTimeout(function () {
+          menuContent.classList.toggle('animate-slideOutRight');
           menu.classList.toggle('hidden');
         }, 250);
       });
