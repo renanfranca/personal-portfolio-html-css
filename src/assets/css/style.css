@@ -703,6 +703,9 @@ video {
 .self-start {
   align-self: flex-start;
 }
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1033,4 +1036,50 @@ video {
 :is(.dark .dark\:hover\:bg-darkgray-700:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+  .md\:hidden {
+    display: none;
+  }
+  .md\:p-20 {
+    padding: 5rem;
+  }
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .md\:font-bold {
+    font-family: interbold;
+  }
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .md\:font-bold {
+    font-weight: 700;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .lg\:leading-\[72px\] {
+    line-height: 72px;
+  }
 }
