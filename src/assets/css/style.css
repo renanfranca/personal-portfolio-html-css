@@ -676,6 +676,9 @@ video {
 .items-center {
   align-items: center;
 }
+.items-baseline {
+  align-items: baseline;
+}
 .justify-end {
   justify-content: flex-end;
 }
@@ -773,6 +776,9 @@ video {
 }
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+.fill-lightgray-600 {
+  fill: #4b5563;
 }
 .stroke-darkgray-600 {
   stroke: #d1d5db;
@@ -979,6 +985,9 @@ video {
 :is(.dark .dark\:bg-darkgray-400) {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+:is(.dark .dark\:fill-darkgray-600) {
+  fill: #d1d5db;
 }
 :is(.dark .dark\:stroke-darkgray-600) {
   stroke: #d1d5db;
