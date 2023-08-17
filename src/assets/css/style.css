@@ -1066,6 +1066,9 @@ video {
   .md\:hidden {
     display: none;
   }
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
   .md\:p-20 {
     padding: 5rem;
   }
