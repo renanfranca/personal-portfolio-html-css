@@ -177,8 +177,8 @@
       </div>
     </header>
     <main class="flex flex-col min-h-screen w-full">
-      <section class="flex flex-col w-full py-16 md:py-24 px-4 md:px-8">
-        <div class="flex flex-col md:flex-row-reverse w-full max-w-7xl mx-auto gap-12">
+      <section class="flex flex-col w-full py-16 md:py-24">
+        <div class="flex flex-col md:flex-row-reverse w-full max-w-7xl mx-auto px-4 md:px-8 gap-12">
           <div class="flex justify-center">
             <div class="relative flex w-[240px] md:w-[320px] h-[280px] md:h-[320px] justify-center">
               <image
@@ -316,8 +316,8 @@
           </div>
         </div>
       </section>
-      <section id="about" class="flex flex-col w-full py-16 md:py-24 px-4 md:px-8 bg-lightgray-50 dark:bg-darkgray-50">
-        <div class="flex flex-col w-full max-w-7xl mx-auto gap-6 md:gap-12">
+      <section id="about" class="flex flex-col w-full py-16 md:py-24 bg-lightgray-50 dark:bg-darkgray-50">
+        <div class="flex flex-col w-full max-w-7xl mx-auto px-4 md:px-8 gap-6 md:gap-12">
           <div class="flex flex-col gap-6">
             <div class="flex justify-center">
               <p
@@ -381,20 +381,20 @@
           </div>
         </div>
       </section>
-      <section id="skills" class="flex flex-col w-full max-w-7xl mx-auto py-16 px-4 gap-12">
-        <div class="flex flex-col gap-4">
-          <div class="flex justify-center">
-            <p
-              class="font-medium text-sm text-center text-gray-600 dark:text-darkgray-600 py-1 px-5 bg-lightgray-200 dark:bg-darkgray-200 rounded-xl"
-            >
-              Skills
+      <section id="skills" class="flex flex-col w-full py-16 md:py-24">
+        <div class="flex flex-col w-full max-w-7xl mx-auto px-4 md:px-8 gap-6 md:gap-12">
+          <div class="flex flex-col gap-4 md:gap-6">
+            <div class="flex justify-center">
+              <p
+                class="font-medium text-sm text-center text-gray-600 dark:text-darkgray-600 py-1 px-5 bg-lightgray-200 dark:bg-darkgray-200 rounded-xl"
+              >
+                Skills
+              </p>
+            </div>
+            <p class="font-normal text-lg lg:text-xl text-center text-lightgray-600 dark:text-darkgray-600">
+              The skills, tools and technologies I am really good at:
             </p>
-          </div>
-          <p class="font-normal text-lg text-center text-lightgray-600 dark:text-darkgray-600">
-            The skills, tools and technologies I am really good at:
-          </p>
-          <div class="flex flex-col justify-center gap-4">
-            <div class="flex w-full justify-between">
+            <div class="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
               <div class="flex flex-col items-center gap-2">
                 <img class="w-16 h-16" src="assets/icons/icon-javscript.svg" alt="Javascript" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Javascript</p>
@@ -407,8 +407,6 @@
                 <img class="w-16 h-16" src="assets/icons/icon-react.svg" alt="React" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">React</p>
               </div>
-            </div>
-            <div class="flex w-full justify-between">
               <div class="flex flex-col items-center gap-2">
                 <img class="w-16 h-16" src="assets/icons/icon-nextjs.svg" alt="Nextjs" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Nextjs</p>
@@ -422,8 +420,6 @@
                 <img class="hidden dark:flex w-16 h-16" src="assets/icons/icon-express_darkmode.svg" alt="React" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Express.js</p>
               </div>
-            </div>
-            <div class="flex w-full justify-between">
               <div class="flex flex-col items-center gap-2">
                 <img class="w-16 h-16" src="assets/icons/icon-nest.svg" alt="Nest.js" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Nest.js</p>
@@ -437,8 +433,6 @@
                 <img class="w-16 h-16" src="assets/icons/icon-postgresql.svg" alt="PostgreSQL" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">PostgreSQL</p>
               </div>
-            </div>
-            <div class="flex w-full justify-between">
               <div class="flex flex-col items-center gap-2">
                 <img class="w-16 h-16" src="assets/icons/icon-mongodb.svg" alt="MongoDB" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">MongoDB</p>
@@ -451,8 +445,6 @@
                 <img class="w-16 h-16" src="assets/icons/icon-tailwindcss.svg" alt="Tailwindcss" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Tailwindcss</p>
               </div>
-            </div>
-            <div class="flex w-full justify-between">
               <div class="flex flex-col items-center gap-2">
                 <img class="w-16 h-16" src="assets/icons/icon-figma.svg" alt="Figma" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Figma</p>
@@ -466,8 +458,6 @@
                 <img class="w-16 h-16" src="assets/icons/icon-storybook.svg" alt="Storybook" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Storybook</p>
               </div>
-            </div>
-            <div class="flex w-full justify-between">
               <div class="flex flex-col items-center gap-2">
                 <img class="w-16 h-16" src="assets/icons/icon-git.svg" alt="Git" />
                 <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Git</p>
