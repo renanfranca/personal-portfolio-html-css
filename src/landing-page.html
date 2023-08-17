@@ -101,8 +101,8 @@
         </div>
       </div>
     </div>
-    <header class="sticky top-0 z-30 w-full bg-lightgray/50 dark:bg-darkgray/50 backdrop-blur-xl">
-      <div class="flex w-full max-w-7xl mx-auto items-center justify-between p-4 md:px-20">
+    <header class="sticky top-0 z-30 w-full bg-lightgray/90 dark:bg-darkgray/90">
+      <div class="flex w-full max-w-7xl mx-auto items-center justify-between p-4 md:px-8">
         <a href="#">
           <h3 class="font-bold text-2xl lg:text-3xl text-lightgray-900 dark:text-darkgray-900">&lt;SS /&gt;</h3>
         </a>
@@ -177,14 +177,19 @@
       </div>
     </header>
     <main class="flex flex-col min-h-screen w-full">
-      <section class="flex flex-col w-full py-16 md:py-24 px-4 md:px-20">
+      <section class="flex flex-col w-full py-16 md:py-24 px-4 md:px-8">
         <div class="flex flex-col md:flex-row-reverse w-full max-w-7xl mx-auto gap-12">
-          <div class="relative flex w-full h-[300px] justify-center">
-            <div class="absolute z-10 w-[240px]">
-              <image class="flex dark:hidden" src="assets/images/picture_lightmode.png" alt="portrait picture" />
-              <image class="hidden dark:flex" src="assets/images/picture_darkmode.png" alt="portrait picture" />
+          <div class="flex md:flex-grow justify-center">
+            <div class="relative flex w-[240px] md:w-[320px] h-[280px] md:h-[320px] justify-center">
+              <image
+                class="absolute z-10 w-[240px] md:w-[280px] h-[280px] md:h-[320px] border-8 border-lightgray dark:border-darkgray"
+                src="assets/images/picture_head.png"
+                alt="portrait picture"
+              />
+              <div
+                class="absolute z-9 w-[256px] md:w-[240px] h-[260px] md:h-[280px] border-8 border-transparent mt-7 md:mt-12 md:ml-14 bg-lightgray-200 dark:bg-darkgray-200"
+              ></div>
             </div>
-            <div class="absolute z-10 w-[256px] h-[256px] mt-8 border-8 border-t-0 border-lightgray-200 dark:border-darkgray-200"></div>
           </div>
           <div class="flex flex-col gap-12">
             <div class="flex flex-col gap-2">
@@ -311,7 +316,7 @@
           </div>
         </div>
       </section>
-      <section id="about" class="flex flex-col w-full py-16 md:py-24 px-4 md:px-20 bg-lightgray-50 dark:bg-darkgray-50">
+      <section id="about" class="flex flex-col w-full py-16 md:py-24 px-4 md:px-8 bg-lightgray-50 dark:bg-darkgray-50">
         <div class="flex flex-col w-full max-w-7xl mx-auto gap-12">
           <div class="flex flex-col gap-6">
             <div class="flex justify-center">
