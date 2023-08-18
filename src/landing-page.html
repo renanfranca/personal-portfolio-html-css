@@ -365,11 +365,11 @@
               </p>
               <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">Finally, some quick bits about me.</p>
               <div class="flex gap-2">
-                <ul class="flex flex-col list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 gap-2">
+                <ul class="flex flex-col list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 pl-5 gap-2">
                   <li>B.E. in Computer Engineering</li>
                   <li>Full time freelancer</li>
                 </ul>
-                <ul class="flex flex-col list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 gap-2">
+                <ul class="flex flex-col list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 pl-5 gap-2">
                   <li>Avid learner</li>
                   <li>Aspiring indie hacker</li>
                 </ul>
@@ -466,48 +466,66 @@
           </div>
         </div>
       </section>
-      <section id="experience" class="flex flex-col w-full max-w-7xl mx-auto py-16 px-4 gap-6 bg-lightgray-50 dark:bg-darkgray-50">
-        <div class="flex flex-col gap-4">
-          <div class="flex justify-center">
-            <p
-              class="font-medium text-sm text-center text-gray-600 dark:text-darkgray-600 py-1 px-5 bg-lightgray-200 dark:bg-darkgray-200 rounded-xl"
-            >
-              Experience
+      <section id="experience" class="flex flex-col w-full py-16 md:py-24 gap-6 bg-lightgray-50 dark:bg-darkgray-50">
+        <div class="flex flex-col w-full max-w-7xl mx-auto px-4 md:px-8 gap-6 md:gap-12">
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-center">
+              <p
+                class="font-medium text-sm text-center text-gray-600 dark:text-darkgray-600 py-1 px-5 bg-lightgray-200 dark:bg-darkgray-200 rounded-xl"
+              >
+                Experience
+              </p>
+            </div>
+            <p class="font-normal text-lg text-center text-lightgray-600 dark:text-darkgray-600">
+              Here is a quick summary of my most recent experiences:
             </p>
           </div>
-          <p class="font-normal text-lg text-center text-lightgray-600 dark:text-darkgray-600">
-            Here is a quick summary of my most recent experiences:
-          </p>
-        </div>
-        <div class="flex flex-col p-8 gap-4 shadow-md dark:shadow-xl rounded-xl">
-          <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
-          <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700">Nov 2021 - Present</p>
-          <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">Sr. Frontend Developer</p>
-          <ul class="list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
-            <li>Sed quis justo ac magna.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          </ul>
-        </div>
-        <div class="flex flex-col p-8 gap-4 shadow-md dark:shadow-xl rounded-xl">
-          <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
-          <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700">Jul 2017 - Oct 2021</p>
-          <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">Team Lead</p>
-          <ul class="list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
-            <li>Sed quis justo ac magna.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Sed quis justo ac magna.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          </ul>
-        </div>
-        <div class="flex flex-col p-8 gap-4 shadow-md dark:shadow-xl rounded-xl">
-          <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
-          <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700">Dec 2015 - May 2017</p>
-          <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">Full Stack Developer</p>
-          <ul class="list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          </ul>
+          <div
+            class="flex flex-col md:flex-row md:justify-between p-8 gap-4 md:gap-12 shadow-md dark:shadow-xl rounded-xl bg-lightgray dark:bg-darkgray-100"
+          >
+            <div class="flex md:w-1/4">
+              <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
+            </div>
+            <p class="font-normal text-base md:w-1/4 text-right text-lightgray-700 dark:text-darkgray-700 md:order-last">
+              Nov 2021 - Present
+            </p>
+            <div class="flex flex-col md:w-2/4 gap-4">
+              <p class="font-semibold text-lg md:text-xl text-lightgray-900 dark:text-darkgray-900">Sr. Frontend Developer</p>
+              <ul class="flex flex-col list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600 pl-5">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                <li>Sed quis justo ac magna.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row p-8 gap-4 md:gap-12 shadow-md dark:shadow-xl rounded-xl bg-lightgray dark:bg-darkgray-100">
+            <div class="flex md:w-1/4">
+              <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
+            </div>
+            <p class="font-normal text-base md:w-1/4 text-lightgray-700 dark:text-darkgray-700 md:order-last">Jul 2017 - Oct 2021</p>
+            <div class="flex flex-col md:w-2/4 gap-4">
+              <p class="font-semibold text-lg md:text-xl text-lightgray-900 dark:text-darkgray-900">Team Lead</p>
+              <ul class="flex flex-col list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
+                <li>Sed quis justo ac magna.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Sed quis justo ac magna.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row md:justify-between p-8 gap-4 shadow-md dark:shadow-xl rounded-xl bg-lightgray dark:bg-darkgray-100"
+          >
+            <img class="w-[102px] h-[28px]" src="assets/images/logo-upwork.png" alt="logo upwork" />
+            <p class="font-normal text-base text-lightgray-700 dark:text-darkgray-700 md:order-last">Dec 2015 - May 2017</p>
+            <div class="flex flex-col md:w-2/4 gap-4">
+              <p class="font-semibold text-lg md:text-xl text-lightgray-900 dark:text-darkgray-900">Full Stack Developer</p>
+              <ul class="flex flex-col list-inside list-disc font-normal text-base text-lightgray-600 dark:text-darkgray-600">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section id="work" class="flex flex-col w-full max-w-7xl mx-auto py-16 px-4 gap-6">
