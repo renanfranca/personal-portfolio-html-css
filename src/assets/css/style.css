@@ -1088,3 +1088,9 @@ video {
     line-height: 1.75rem;
   }
 }
+@media (min-width: 1280px) {
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
