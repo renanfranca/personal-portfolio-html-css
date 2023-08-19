@@ -531,6 +531,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1024,6 +1027,9 @@ video {
   .md\:w-\[400px\] {
     width: 400px;
   }
+  .md\:w-1\/2 {
+    width: 50%;
+  }
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -1069,8 +1075,14 @@ video {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
   .lg\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
   .lg\:gap-y-12 {
     row-gap: 3rem;
