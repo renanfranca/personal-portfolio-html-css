@@ -16,15 +16,22 @@ npm install
 
 ## Local environment
 
-
 <!-- jhipster-needle-localEnvironment -->
 
 ## Start up
 
+Just run `npm run build:css:watch` to keep generating the src/assets/css/style.cs only with the used class.
 
 <!-- jhipster-needle-startupCommand -->
 
 ## Documentation
 
+The following packages were used to setup the environment:
+
+- `npm install --save-dev postcss-cli`
+- `npm install -D tailwindcss postcss autoprefixer`
+- `npx tailwindcss init --full`
+- `npm add -D animated-tailwindcss`
+- `npm install cssnano postcss --save-dev`
 
 <!-- jhipster-needle-documentation -->
