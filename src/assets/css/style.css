@@ -1047,6 +1047,9 @@ video {
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
   }
+  .md\:flex-col {
+    flex-direction: column;
+  }
   .md\:justify-between {
     justify-content: space-between;
   }
