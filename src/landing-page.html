@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio HTML + CSS</title>
-    <link href="assets/css/fonts.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body class="bg-lightgray dark:bg-darkgray">
+    <link href="assets/css/fonts.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <div
       id="menu"
       role="dialog"
@@ -36,6 +36,11 @@
         <ul class="flex flex-col w-full p-4 gap-4 border-b border-lightgray-100 dark:border-darkgray-100">
           <li class="flex">
             <a id="menu-about" class="w-full font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#about">About</a>
+          </li>
+          <li class="flex">
+            <a id="menu-service" class="w-full font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#services"
+              >Services</a
+            >
           </li>
           <li class="flex">
             <a id="menu-work" class="w-full font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#work">Portfolio</a>
@@ -123,6 +128,7 @@
         </a>
         <div class="hidden md:flex items-center gap-6">
           <a class="font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#about">About</a>
+          <a class="font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#services">Services</a>
           <a class="font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#work">Portfolio</a>
           <a class="font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#contact">Contact</a>
           <span class="h-6 w-0.5 bg-lightgray-100 dark:bg-darkgray-100"></span>
@@ -477,7 +483,7 @@
           </div>
         </div>
       </section>
-      <section id="experience" class="flex flex-col w-full py-16 md:py-24 gap-6 bg-lightgray-50 dark:bg-darkgray-50">
+      <section id="services" class="flex flex-col w-full py-16 md:py-24 gap-6 bg-lightgray-50 dark:bg-darkgray-50">
         <div class="flex flex-col w-full max-w-7xl mx-auto px-4 md:px-8 xl:px-20 gap-6 md:gap-12">
           <div class="flex flex-col gap-4">
             <div class="flex justify-center">
@@ -692,63 +698,6 @@
                   <path d="M16 20L27 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="testimonials" class="hidden flex flex-col w-full py-16 md:py-24 gap-6 bg-lightgray-50 dark:bg-darkgray-50">
-        <div class="flex flex-col w-full max-w-7xl mx-auto px-4 md:px-8 xl:px-20 gap-6 md:gap-12">
-          <div class="flex flex-col gap-4">
-            <div class="flex justify-center">
-              <p
-                class="font-medium text-sm text-center text-gray-600 dark:text-darkgray-600 py-1 px-5 rounded-xl bg-lightgray-200 dark:bg-darkgray-200"
-              >
-                Testimonials
-              </p>
-            </div>
-            <p class="font-normal text-lg lg:text-xl text-center text-lightgray-600 dark:text-darkgray-600">
-              Nice things people have said about me:
-            </p>
-          </div>
-          <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-            <div class="flex flex-col items-center p-8 gap-6 shadow-md dark:shadow-xl rounded-xl bg-lightgray dark:bg-darkgray-100">
-              <div class="flex items-center justify-center w-16 h-16 rounded-full bg-lightgray-400 dark:bg-darkgray-400">
-                <img src="assets/icons/icon-user.svg" alt="IconUser" />
-              </div>
-              <p class="font-normal text-base text-left text-lightgray-600 dark:text-darkgray-600">
-                “Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the
-                future for Frontend development.”
-              </p>
-              <div class="flex flex-col items-center">
-                <p class="font-semibold text-lg lg:text-xl text-lightgray-900 dark:text-darkgray-900">John Doe</p>
-                <p class="font-normal text-sm text-lightgray-600 dark:text-darkgray-600">Founder - xyz.com</p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center p-8 gap-6 shadow-md dark:shadow-xl rounded-xl bg-lightgray dark:bg-darkgray-100">
-              <div class="flex items-center justify-center w-16 h-16 rounded-full bg-lightgray-400 dark:bg-darkgray-400">
-                <img src="assets/icons/icon-user.svg" alt="IconUser" />
-              </div>
-              <p class="font-normal text-base text-left text-lightgray-600 dark:text-darkgray-600">
-                “Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the
-                future for Frontend development.”
-              </p>
-              <div class="flex flex-col items-center">
-                <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">John Doe</p>
-                <p class="font-normal text-sm text-lightgray-600 dark:text-darkgray-600">Founder - xyz.com</p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center p-8 gap-6 shadow-md dark:shadow-xl rounded-xl bg-lightgray dark:bg-darkgray-100">
-              <div class="flex items-center justify-center w-16 h-16 rounded-full bg-lightgray-400 dark:bg-darkgray-400">
-                <img src="assets/icons/icon-user.svg" alt="IconUser" />
-              </div>
-              <p class="font-normal text-base text-left text-lightgray-600 dark:text-darkgray-600">
-                “Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the
-                future for Frontend development.”
-              </p>
-              <div class="flex flex-col items-center">
-                <p class="font-semibold text-lg text-lightgray-900 dark:text-darkgray-900">John Doe</p>
-                <p class="font-normal text-sm text-lightgray-600 dark:text-darkgray-600">Founder - xyz.com</p>
-              </div>
             </div>
           </div>
         </div>
@@ -1029,7 +978,7 @@
       }
 
       function closeMenuOnSpecificContent(event) {
-        if (event.target.closest('#menu-about, #menu-work, #menu-testimonials, #menu-contact')) {
+        if (event.target.closest('#menu-about, #menu-services, #menu-work, #menu-contact')) {
           setTimeout(closeMenuContent, 500);
         } else {
           event.stopPropagation();
