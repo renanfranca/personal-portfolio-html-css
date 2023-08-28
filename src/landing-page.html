@@ -978,7 +978,7 @@
       }
 
       function closeMenuOnSpecificContent(event) {
-        if (event.target.closest('#menu-about, #menu-services, #menu-work, #menu-contact')) {
+        if (event.target.closest('#menu-about, #menu-service, #menu-work, #menu-contact')) {
           setTimeout(closeMenuContent, 500);
         } else {
           event.stopPropagation();
