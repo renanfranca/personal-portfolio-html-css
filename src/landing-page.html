@@ -38,7 +38,7 @@
             <a id="menu-about" class="w-full font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#about">About</a>
           </li>
           <li class="flex">
-            <a id="menu-service" class="w-full font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#services"
+            <a id="menu-services" class="w-full font-medium text-base text-lightgray-600 dark:text-darkgray-600" href="#services"
               >Services</a
             >
           </li>
@@ -992,7 +992,7 @@
       }
 
       function closeMenuOnSpecificContent(event) {
-        if (event.target.closest('#menu-about, #menu-service, #menu-work, #menu-contact')) {
+        if (event.target.closest('#menu-about, #menu-services, #menu-work, #menu-contact')) {
           setTimeout(closeMenuContent, 500);
         } else {
           event.stopPropagation();
