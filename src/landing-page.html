@@ -538,18 +538,11 @@
               <div class="flex flex-col md:w-2/5 gap-4">
                 <h3 class="font-bold text-xl md:text-2xl text-lightgray-900 dark:text-darkgray-900 mb-3">Special Pricing</h3>
                 <ul class="flex flex-col list-decimal font-normal text-base text-lightgray-600 dark:text-darkgray-600 pl-5">
-                  <li>
+                  <li class="group">
                     Landing page with 4 sections:
                     <span class="font-semibold line-through">$200</span> Now at
-                    <span class="font-bold text-red-600 dark:text-red-400">$100!</span>
-                    <br />
-                    - Add sections for just <span class="font-bold text-red-600 dark:text-red-400">$20</span> (Originally
-                    <span class="font-semibold line-through">$40</span>) each.
-                  </li>
-                  <li class="mt-2">
-                    Multipage: <span class="font-semibold line-through">$300</span> Now at
-                    <span class="font-bold text-red-600 dark:text-red-400">$150</span> for the first page!
-                    <button id="multipage-price-help" class="group relative">
+                    <span class="font-bold text-red-600 dark:text-red-400">$100!</span
+                    ><button id="landingpage-price-help" class="relative">
                       <svg
                         class="inline-flex stroke-purple-600 dark:stroke-purple-300 cursor-pointer animate-twBounce animate-infinite"
                         xmlns="http://www.w3.org/2000/svg"
@@ -567,7 +560,36 @@
                         <path d="M12 17h.01" />
                       </svg>
                       <span
-                        class="group-hover:opacity-100 group-hover:h-auto group-hover:py-1 absolute top-6 overflow-hidden h-0 transform -translate-x-1/2 px-3 py-0 bg-gray-600 text-white text-sm rounded-md opacity-0 transition-opacity duration-500"
+                        class="group-hover:opacity-100 group-hover:h-auto group-hover:py-1 absolute z-50 bottom-6 overflow-hidden h-0 transform -translate-x-1/2 px-3 py-0 bg-gray-600 text-white text-sm rounded-md opacity-0 transition-opacity duration-500"
+                        >Understand the price calculation by an example!</span
+                      >
+                    </button>
+                    <br />
+                    - Add sections for just <span class="font-bold text-red-600 dark:text-red-400">$20</span> (Originally
+                    <span class="font-semibold line-through">$40</span>) each.
+                  </li>
+                  <li class="group mt-2">
+                    Multipage: <span class="font-semibold line-through">$300</span> Now at
+                    <span class="font-bold text-red-600 dark:text-red-400">$150</span> for the first page!
+                    <button id="multipage-price-help" class="relative">
+                      <svg
+                        class="inline-flex stroke-purple-600 dark:stroke-purple-300 cursor-pointer animate-twBounce animate-infinite"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <path d="M12 17h.01" />
+                      </svg>
+                      <span
+                        class="group-hover:opacity-100 group-hover:h-auto group-hover:py-1 absolute bottom-6 overflow-hidden h-0 transform -translate-x-1/2 px-3 py-0 bg-gray-600 text-white text-sm rounded-md opacity-0 transition-opacity duration-500"
                         >Understand the price calculation by an example!</span
                       ></button
                     ><br />
