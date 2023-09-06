@@ -1293,6 +1293,11 @@
 
       function toggleTheme() {
         document.documentElement.classList.toggle('dark');
+        if (document.documentElement.classList.contains('dark')) {
+          setTheme('dark');
+        } else {
+          setTheme('light');
+        }
       }
 
       function closeMenuDirectClick(event) {
@@ -1352,6 +1357,30 @@
         setTimeout(() => {
           tooltip.style.opacity = '0';
         }, 2000);
+      }
+
+      function setTheme(theme) {
+        if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';
+        } else if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+          localStorage.theme = 'dark';
+        } else {
+          localStorage.removeItem('theme');
+          // Re-check system preference
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+      }
+
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
       }
     </script>
   </body>
