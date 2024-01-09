@@ -235,10 +235,16 @@
                 Hi, I'm Renan<span class="inline-flex text-4xl md:text-5xl lg:text-6xl animate-headShake animate-slower">👋</span>
               </h1>
               <p class="font-normal text-base text-lightgray-600 dark:text-darkgray-600">
-                I'm a seasoned software engineer, having stepped into the realm of programming back in 2008 🗓️. Over the years, I've donned
-                multiple hats - from being a versatile full-stack developer to a proficient backend engineer. My disciplined ✅ and
-                organized 🗂️ approach has always been at the core of my work. Lately, I've been particularly drawn to the intricate art of
-                transforming Figma layouts into pixel-perfect HTML and CSS 🎨.
+                I have <span id="experience">...</span> years of experience as a software engineer 👨‍💻. Over the years, I've taken on various
+                roles, ranging from a versatile full-stack developer to a proficient backend engineer. My disciplined ✅ and organized 🗂️
+                approach has always been central to my work ethic. Recently, I was elected as a member of the
+                <a
+                  class="underline underline-offset-4 transition-all hover:text-lightgray-900 dark:hover:text-darkgray-900 active:text-lightgray-600 dark:active:text-darkgray-600"
+                  href="https://www.jhipster.tech/team/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Jhipster Core Team</a
+                >.
               </p>
             </div>
             <div class="flex flex-col gap-2">
@@ -1283,6 +1289,7 @@
         setupPriceDialogActions();
         setupThemeActions();
         setupCopyActions();
+        updateExperience();
       }
 
       function setupMenuActions() {
@@ -1408,6 +1415,17 @@
         setTimeout(() => {
           tooltip.style.opacity = '0';
         }, 2000);
+      }
+
+      function calculateYearsSince(year) {
+        const currentYear = new Date().getFullYear();
+        return currentYear - year;
+      }
+
+      function updateExperience() {
+        const startYear = 2008;
+        const yearsOfExperience = calculateYearsSince(startYear);
+        document.getElementById('experience').textContent = `${yearsOfExperience}`;
       }
     </script>
   </body>
