@@ -15,6 +15,7 @@
     "prettier:check": "prettier --check \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\"",
     "prettier:format": "prettier --write \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\"",
     "build:css": "NODE_ENV=development npx postcss src/assets/css/tailwind.css -o src/assets/css/style.css",
+    "build:home:css": "NODE_ENV=development npx postcss src/assets/css/tailwind.css -o src/assets/css/home-blog.css",
     "build:css:watch": "NODE_ENV=development npx postcss src/assets/css/tailwind.css -o src/assets/css/style.css --watch",
     "build:css:prod": "NODE_ENV=production npx postcss src/assets/css/tailwind.css -o src/assets/css/style.css",
     "build:css:prod:watch": "NODE_ENV=production npx postcss src/assets/css/tailwind.css -o src/assets/css/style.css --watch"
